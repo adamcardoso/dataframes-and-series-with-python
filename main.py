@@ -18,3 +18,10 @@ print(data)  # Print the whole data frame
 
 data['High_Score'] = data['High_Score'] ** 2
 print(data)  # Print the whole data frame
+
+columnList = ['LSD_ppm', 'Avg_Math_Test_Score']
+cleanData = data[columnList]
+print(cleanData)  # Print the whole data frame
+
+y = data[['Avg_Math_Test_Score']]
+print(type(y))  # Print the type of y
